@@ -5,91 +5,95 @@
     <title>Веб-студия Нёрдс</title>
 <!--	<link rel="stylesheet" href="style.css"> -->
   </head>
-  <body>
-<header>
- <h1>Студия веб-дизайна NERDS</h1>
- <p>Разработка сайтов, приложений, корпоративных презентаций в Краснодаре</p>
-
-    <nav>   <!--  top-menu -->
-	
-	  <a href=""><img src="" alt="ЛОГОТИП"> </a>
-	
-      <ul>
-	    <li><a href="">СТУДИЯ</a></li> 
-	    <li><a href="">КЛИЕНТЫ</a></li> 	
-	    <li><a href="catalog.html">МАГАЗИН</a></li> 	
-	    <li><a href="">КОНТАКТЫ</a></li> 	
-	  </ul>
-
-	  <a href="">Корзина</a>
-
+<body class="page">
+  <header class="page-header">
+    <h1 class="visually-hidden">Студия веб-дизайна NERDS</h1>
+    <nav class="navigator">   <!--  top-menu -->
+      <div class="logo"><img src="" alt="Логотип"></div>
+      <ul class="list">
+        <li class="punkt"><a class="stylenav" href="#">Студия</a></li> 
+        <li class="punkt"><a class="stylenav" href="#">Клиенты</a></li> 	
+	      <li class="punkt"><a class="stylenav" href="catalog.html">Магазин</a></li> 	
+	      <li class="punkt"><a class="stylenav" href="#">Контакты</a></li> 	
+	    </ul>
+      <a class="korzina" href="#">Корзина</a>
     </nav>
-</header>
+  </header>
+  <main class="page-content">
+    <section> 
+      <h2 class="visually-hidden">Наш подход к работе</h2>
+      <section class="mainslider">
+        <!-- Далее - слайдер  -->
+      </section>     
+    </section>
+    <section class="all-uslugi">  
+      <h2 class="visually-hidden">Услуги</h2>
+      <section class="site-uslugi">
+        <h3 class="header-uslugi">Веб-сайты</h3>
+        <p>Мир никогда не будет прежним, после того, как увидит ваш сайт!</p>
+        <button type="button">Заказать</button>
+      </section>
+      
+      <section class="application-uslugi">
+        <h3 class="header-uslugi">Приложения</h3>
+        <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
+        <button type="button">Заказать</button>
+      </section> 
+      <section class="present-uslugi">
+        <h3 class="header-uslugi">Презентации</h3>
+        <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+        <button type="button">Заказать</button>
+      </section> 
+    </section>
 
-<main>
- <section> 
-<h2>Наш подход к работе</h2>
-<!-- Далее - слайдер  -->
 
- <section>  
- <h2>Услуги</h2>
-    <article>
-      <h3>ВЕБ-САЙТЫ</h3>
-	  <p>Мир никогда не будет прежним, после того, как увидит ваш сайт!</p>
-	  <p><button type="button">ЗАКАЗАТЬ</button>
-    </article> 
+    <section class="about">
+      <h2 class="visually-hidden">О нас</h2>
+      <section class="about-us">
+        <p>Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p>Исповедуем принципы минимализма и чистоты. Работаем, не покладая рук, как роботы.</p>
+        <p>Выполняем заказы на разработку</p>
+        <ul class="list-zakazy">
+            <li class="punkt-zakazy">Веб-сайтов любой сложности</li>
+            <li class="punkt-zakazy">Мобильных приложений для IOS и Android</li>		
+            <li class="punkt-zakazy">Слайдшоу и видео для корпоративных презентаций</li>		
+        </ul>
+      </section>
 
-    <article>
-      <h3>ПРИЛОЖЕНИЯ</h3>
-	  <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-	  <p><button type="button">ЗАКАЗАТЬ</button>
-    </article> 
+      <section class="features">
+        <p>С 2004 года любим точность во всём</p>
+        <!-- СПИСОК ФИЧЕЙ -->
+      </section>
+    </section>
 
-    <article>
-      <h3>ПРЕЗЕНТАЦИИ</h3>
-	  <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-      <p><button type="button">ЗАКАЗАТЬ</button>
-    </article> 
-  </section>
+    <section class="clienty"> 
+      <h2 class="visually-hidden">Наши клиенты</h2>
+      <!-- Далее - слайдер  -->
+    </section>
+  </main>
 
-  <section>
-   <h2>О НАС</h2>
-    <article>
-	  <p>Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
-	  <p>Исповедуем принципы минимализма и чистоты. Работаем, не покладая рук, как роботы.</p>
-	  <p>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ</p>
-	  <ul>
-	    <li>Веб-сайтов любой сложности</li>
-	    <li>Мобильных приложений для IOS и Android</li>		
-	    <li>Слайдшоу и видео для корпоративных презентаций</li>		
- 	  </ul>
-    </article>
-	<div>
-	<p>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЁМ</p>
-	<!-- СПИСОК ФИЧЕЙ -->
-	</div>
-  </section>
- 
-  <section>
-   <h2>НАШИ КЛИЕНТЫ</h2>
-  </section>   
+  <footer class="page-footer">
+    <section class="karta">
+      <!-- Карта -->
+    </section> 
 
-</main>
+    <div class="socials">
+      <!-- Иконки соцсетей-->
 
-<footer>
+      <ul class="soc-icons">
+        <li class="icon-vk"><a class="nav-soc" href="#"><img src="" alt="ВК"></a></li>
+        <li class="icon-fb"><a class="nav-soc" href="#"><img src="" alt="ФБ"></a></li>
+        <li class="icon-insta"><a class="nav-soc" href="#"><img src="" alt="Инстаграмм"></a></li>
+      </ul>
+    </div>  
 
-<section>
-<!-- Карта -->
-</section>   
+    <div class="friends">
+      <p>Давайте дружить, это выгодно!</p>
+    </div>
 
-<div>  <!-- Иконки соцсетей-->
-   <a href=""><img src="" alt="ВК"></a> 
-   <a href=""><img src="" alt="ФБ"></a> 
-   <a href=""><img src="" alt="Инстаграмм"></a> 
-
-   <p>Давайте дружить, это выгодно!</p>
-   <p>Скидка 10% для друзей из социальных сетей</p>
-</div>
+    <div class="skidka"> 
+      <p>Скидка 10% для друзей из социальных сетей</p>
+    </div>
 </footer>
 
 
