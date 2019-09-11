@@ -3,61 +3,131 @@
   <head>
     <meta charset="utf-8">
     <title>Веб-студия Нёрдс</title>
-	<link rel="stylesheet" href="style.css">
+<!--  <link rel="stylesheet" href="style.css"> -->
   </head>
-  <body>
-<header>
- <h1>МАГАЗИН ШАБЛОНОВ САЙТА</h1>
-
-    <nav>   <!--  top-menu -->
-	  <a href="index.html"><img src="" alt="ЛОГОТИП"> </a>
-      <ul>
-	    <li><a href="">СТУДИЯ</a></li> 
-	    <li><a href="">КЛИЕНТЫ</a></li> 	
-	    <li><a href="">МАГАЗИН</a></li> 	
-	    <li><a href="">КОНТАКТЫ</a></li> 	
-	  </ul>
-	  <a href="">Корзина</a>
+<body class="page">
+  <header class="page-header">
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
+    <nav class="navigator">   <!--  top-menu -->
+      <div class="logo"><img src="" alt="Логотип"></div>
+      <ul class="list">
+        <li class="punkt"><a class="stylenav" href="#">Студия</a></li> 
+        <li class="punkt"><a class="stylenav" href="#">Клиенты</a></li>   
+        <li class="punkt"><a class="active" href="catalog.html">Магазин</a></li>  
+        <li class="punkt"><a class="stylenav" href="#">Контакты</a></li>  
+      </ul>
+      <a class="korzina" href="#">Корзина</a>
     </nav>
+  </header>
 
-</header>
-<main>
- <aside> 
-<h2>Готовые шаблоны для вашего сайта</h2>
-<!-- радиокнопки -->
-<p>СЕТКА</p>
-<p>
-   <input type="radio" name="setka" value="setka1"> Адаптивный <Br>
-   <input type="radio" name="setka" value="setka2"> Резиновый<Br>
-   <input type="radio" name="setka" value="setka3"> Фиксированный<Br>
-</p>   
-<p>ОСОБЕННОСТИ</p>   
-   <p>
-     <input type="checkbox" name="option1" value="a1" checked>Слайдер<Br>
-     <input type="checkbox" name="option2" value="a2">Блок преимуществ<Br>
-     <input type="checkbox" name="option3" value="a3">Новости<Br> 
-     <input type="checkbox" name="option4" value="a4">Галерея<Br> 
-     <input type="checkbox" name="option5" value="a5">Корзина
-   </p>
-   <button type="button">ПОКАЗАТЬ</button>
-</aside>
-<!-- -->
-</main>
+  <main class="page-shop">
+    <h2 class="visually-hidden">Готовые шаблоны для вашего сайта</h2>
+    <aside class="left-choice"> 
+      <form>
+        <fieldset class="cosht">
+          <legend>Стоимость</legend>
+          <input type="range" min="0" max="15000">           
+        </fieldset>
 
-<footer>
+        <fieldset class="radiobut">
+          <legend>Сетка</legend>
+          <!-- радиокнопки -->
+          <input type="radio" name="setka" value="adaptiv" id="adaptiv">
+          <label for="adaptiv">Адаптивный</label> 
+          <input type="radio" name="setka" value="rezina" id="rezina"> 
+          <label for="rezina">Резиновый</label> 
+          <input type="radio" name="setka" value="fix" id="fix"> 
+          <label for="fix">Фиксированный</label> 
+        </fieldset>
 
-<section>
-<!-- Карта -->
-</section>   
+        <fieldset>
+          <legend>Особенности</legend>
+          <!--чек боксы -->
+          <input type="checkbox" name="specific" id="slaider" checked>
+          <label for="slaider">Слайдер</label>
+          <input type="checkbox" name="advantage" id="advantage">
+          <label for="advantage">Блок преимуществ</label>
+          <input type="checkbox" name="news" id="news" checked>
+          <label for="news">Новости</label>
+          <input type="checkbox" name="gallery" id="gallery">
+          <label for="gallery">Галерея</label>
+          <input type="checkbox" name="basket" id="basket">
+          <label for="basket">Корзина</label>
+        </fieldset>
 
-<div>  <!-- Иконки соцсетей-->
-   <a href=""><img src="" alt="ВК"></a> 
-   <a href=""><img src="" alt="ФБ"></a> 
-   <a href=""><img src="" alt="Инстаграмм"></a> 
+        <section>
+          <input type="submit" value="Показать">                              
+        </section>
+      </form>
+    </aside>
 
-   <p>Давайте дружить, это выгодно!</p>
-   <p>Скидка 10% для друзей из социальных сетей</p>
-</div>
-</footer>
-  </body>
+    <!--Карточки товара (шаблонов) -->
+    <article class="sedona">
+      <img src="" alt="Sedona">
+      <!--скрытое содержимое-->
+  
+    </article>
+
+    <article class="pink">
+      <img src="" alt="pink">
+      <!--скрытое содержимое-->   
+    </article>
+
+    <article class="borodinski">
+      <img src="" alt="barbeshop">
+      <!--скрытое содержимое-->   
+    </article>
+
+    <article class="mishki">
+      <img src="" alt="mishki">
+      <!--скрытое содержимое-->
+    </article>
+
+    <article class="study">
+      <img src="" alt="study">
+      <!--скрытое содержимое--> 
+    </article>
+
+    <article class="kvas">
+      <img src="" alt="kvas">
+      <!--скрытое содержимое-->   
+    </article>        
+
+    <section class="pagination-page">
+      <!--пагинация -->
+      <ul class="pagination">
+        <li class="prev"><a class="stylepag" href="#">Предыдущая</a></li> 
+        <li class="active"><a class="stylepag" href="#">1</a></li>   
+        <li class="two"><a class="stylepag" href="#">2</a></li>  
+        <li class="three"><a class="stylepag" href="#">2</a></li>  
+        <li class="next"><a class="stylepag" href="#">Следующая</a></li>  
+      </ul>
+    </section>
+
+  </main>
+
+ <footer class="page-footer">
+    <section class="karta">
+      <!-- Карта -->
+    </section> 
+
+    <div class="socials">
+      <!-- Иконки соцсетей-->
+
+      <ul class="soc-icons">
+        <li class="icon-vk"><a class="nav-soc" href="#"><img src="" alt="ВК"></a></li>
+        <li class="icon-fb"><a class="nav-soc" href="#"><img src="" alt="ФБ"></a></li>
+        <li class="icon-insta"><a class="nav-soc" href="#"><img src="" alt="Инстаграмм"></a></li>
+      </ul>
+    </div>  
+
+    <div class="friends">
+      <p>Давайте дружить, это выгодно!</p>
+    </div>
+
+    <div class="skidka"> 
+      <p>Скидка 10% для друзей из социальных сетей</p>
+    </div>
+  </footer>
+</body>
 </html>
