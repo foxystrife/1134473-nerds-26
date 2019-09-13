@@ -27,7 +27,17 @@
       <form class="filter" method="get" action="">
         <fieldset class="cosht">
           <legend>Стоимость</legend>
-          <input type="range" min="0" max="15000">           
+          <input type="range" min="0" max="15000"> 
+
+          <!--поля для ввода диапазона цены -->
+
+          <span class="range-text">От</span>
+          <input class="range-value-left" value="0">
+          <span class="range-label">руб.</span>
+          <span class="range-text">До</span>
+          <input class="text-value-right" value="15000">
+          <span class="range-label">руб.</span>          
+
         </fieldset>
 
         <fieldset class="radiobut">
@@ -55,9 +65,11 @@
           <input type="checkbox" name="basket" id="basket">
           <label for="basket">Корзина</label>
         </fieldset>
-          <button type="submit" class="filter-button">Показать</button>                              
+          <button type="submit" class="filter-button">Показать</button>
+
       </form>
     </aside>
+
 
     <main class="page-shop">
     <!--Карточки товара (шаблонов) -->
