@@ -8,23 +8,24 @@
   </head>
 <body class="page">
   <header class="page-header">
-    <h1 class="page-title">Магазин готовых шаблонов</h1>
-    <nav class="navigator">   <!--  top-menu -->
-      <div class="logo"><img src="img/logo/nerds-logo.svg" alt="Логотип"></div>
-      <ul class="list">
-        <li class="main-nav"><a class="stylenav" href="#">Студия</a></li> 
-        <li class="main-nav"><a class="stylenav" href="#">Клиенты</a></li>   
-        <li class="main-nav"><a class="active" href="catalog.html">Магазин</a></li>  
-        <li class="main-nav"><a class="stylenav" href="#">Контакты</a></li>  
+    <h1 class="visually-hidden">Студия веб-дизайна NERDS</h1>
+    <nav class="navigator" aria-label="Навигация по сайту Нёрдс">   <!--  top-menu -->
+      <div class="logo"><a href="index.html"><img src="img/logo/nerds-logo.svg" alt="Логотип"></a></div>
+      <ul class="main-navigation">
+        <li class="item-main-navigation"><a class="stylenav" href="#">Студия</a></li> 
+        <li class="item-main-navigation"><a class="stylenav" href="#">Клиенты</a></li>  
+        <li class="item-main-navigation"><a class="stylenav" href="catalog.html">Магазин</a></li>   
+        <li class="item-main-navigation"><a class="stylenav" href="#">Контакты</a></li>   
       </ul>
       <a class="basket-button" href="#">Корзина</a>
     </nav>
   </header>
 
+  <section class="sitebar">
 
     <h2 class="visually-hidden">Готовые шаблоны для вашего сайта</h2>
     <aside class="left-choice"> 
-      <form class="filter" method="get" action="">
+      <form class="filter" method="get" action="#">
         <fieldset class="cosht">
           <legend>Стоимость</legend>
           <input type="range" min="0" max="15000"> 
@@ -69,27 +70,26 @@
 
       </form>
     </aside>
-
+  </section>
 
     <main class="page-shop">
     <!--Карточки товара (шаблонов) -->
 
     <section class="catalog">
       <h2 class="visually-hidden">Каталог шаблонов для сайта</h2>
-      
       <ul class="catalog-list">
-        
+
         <li class="catalog-item">
           <a href="#">
             <h3 class="category-header">Sedona</h3>
-            <p>
-              <img src="img/shop/sedona.jpg" alt="Шаблон Sedona">
-            </p>
+              <p>
+                <img src="img/shop/sedona.jpg" alt="Шаблон Sedona">
+              </p>
+          </a> 
             <p class="price">
-              <a class="button" href="#">9 900 Р</a>
+             <a class="button" href="#">9 900 Р</a>
             </p>
-          </a>
-        </li>
+         </li>
 
         <li class="catalog-item">
          <a href="#">
@@ -97,12 +97,11 @@
             <p>
               <img src="img/shop/pink.jpg" alt="Шаблон Pink">
             </p>
+         </a>                 
             <p class="price">
               <a class="button" href="#">9 900 Р</a>
             </p>
-          </a>      
-          
-        </li>
+         </li>
 
         <li class="catalog-item">
           <a href="#">
@@ -110,10 +109,10 @@
             <p>
               <img src="img/shop/barbershop.jpg" alt="Шаблон Barbeshop">
             </p>
+          </a>   
             <p class="price">
               <a class="button" href="#">9 900 Р</a>
             </p>
-          </a>                
         </li>
         
         <li class="catalog-item">
@@ -122,10 +121,10 @@
             <p>
               <img src="img/shop/mishka.jpg" alt="Шаблон Mishki">
             </p>
+          </a>               
             <p class="price">
               <a class="button" href="#">9 900 Р</a>
             </p>
-          </a>                
         </li>
 
         <li class="catalog-item">
@@ -134,11 +133,10 @@
             <p>
               <img src="img/shop/aplus.jpg" alt="Шаблон Aplus">
             </p>
+          </a>  
             <p class="price">
               <a class="button" href="#">9 900 Р</a>
             </p>
-          </a>                
-
         </li>
 
         <li class="catalog-item">
@@ -147,15 +145,16 @@
             <p>
               <img src="img/shop/kvast.jpg" alt="Шаблон Kvast">
             </p>
+          </a>  
             <p class="price">
               <a class="button" href="#">9 900 Р</a>
             </p>
-          </a>                
          </li>
       </ul>
     </section>
 
     <section class="pagination-page">
+      <h3 class="visually-hidden">Навигация по каталогу сайта</h3>
       <!--пагинация -->
       <ul class="pagination">
         <li class="pagination-item"><a class="pagination-link" href="#">Предыдущая</a></li> 
@@ -169,7 +168,9 @@
   </main>
 
  <footer class="page-footer">
-    <section class="karta">
+    <section class="webmap">
+        <h3 class="visually-hidden">Адрес на карте</h3>
+        <img src="img/map/map.jpg" alt="Карта проезда к офису веб-студии Нёрдс">        
       <!-- Карта -->
     </section> 
 
@@ -187,7 +188,7 @@
       <p>Давайте дружить, это выгодно!</p>
     </div>
 
-    <div class="skidka"> 
+    <div class="discount"> 
       <p>Скидка 10% для друзей из социальных сетей</p>
     </div>
   </footer>
