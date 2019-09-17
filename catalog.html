@@ -9,188 +9,166 @@
 <body class="page">
   <header class="page-header">
     <h1 class="visually-hidden">Студия веб-дизайна NERDS</h1>
-    <nav class="navigator" aria-label="Навигация по сайту Нёрдс">   <!--  top-menu -->
-      <div class="logo"><a href="index.html"><img src="img/logo/nerds-logo.svg" alt="Логотип"></a></div>
+    <nav class="navigation" aria-label="Навигация по сайту Нёрдс">   <!--  top-menu -->
+      <div class="logo"><a href="index.html"><img src="img/logo/nerds-logo.svg" width="175" alt="Логотип"></a></div>
       <ul class="main-navigation">
-        <li class="item-main-navigation"><a class="stylenav" href="#">Студия</a></li> 
-        <li class="item-main-navigation"><a class="stylenav" href="#">Клиенты</a></li>  
-        <li class="item-main-navigation"><a class="stylenav" href="catalog.html">Магазин</a></li>   
-        <li class="item-main-navigation"><a class="stylenav" href="#">Контакты</a></li>   
+        <li class="main-navigation-item"><a class="main-navigation-link" href="#">Студия</a></li> 
+        <li class="main-navigation-item"><a class="main-navigation-link" href="#">Клиенты</a></li>  
+        <li class="main-navigation-activ"><a class="main-navigation-link" href="#" >Магазин</a></li>   
+        <li class="main-navigation-item"><a class="main-navigation-link" href="#">Контакты</a></li>   
       </ul>
       <a class="basket-button" href="#">Корзина</a>
     </nav>
   </header>
+  <main class="page-shop">
 
-  <section class="sitebar">
-
-    <h2 class="visually-hidden">Готовые шаблоны для вашего сайта</h2>
-    <aside class="left-choice"> 
-      <form class="filter" method="get" action="#">
-        <fieldset class="cosht">
-          <legend>Стоимость</legend>
-          <input type="range" min="0" max="15000"> 
-
-          <!--поля для ввода диапазона цены -->
-
-          <span class="range-text">От</span>
-          <input class="range-value-left" value="0">
-          <span class="range-label">руб.</span>
-          <span class="range-text">До</span>
-          <input class="text-value-right" value="15000">
-          <span class="range-label">руб.</span>          
-
-        </fieldset>
-
-        <fieldset class="radiobut">
-          <legend>Сетка</legend>
-          <!-- радиокнопки -->
-          <input type="radio" name="setka" value="adaptiv" id="adaptiv">
-          <label for="adaptiv">Адаптивный</label> 
-          <input type="radio" name="setka" value="rezina" id="rezina"> 
-          <label for="rezina">Резиновый</label> 
-          <input type="radio" name="setka" value="fix" id="fix"> 
-          <label for="fix">Фиксированный</label> 
-        </fieldset>
-
-        <fieldset>
-          <legend>Особенности</legend>
-          <!--чек боксы -->
-          <input type="checkbox" name="specific" id="slaider" checked>
-          <label for="slaider">Слайдер</label>
-          <input type="checkbox" name="advantage" id="advantage">
-          <label for="advantage">Блок преимуществ</label>
-          <input type="checkbox" name="news" id="news" checked>
-          <label for="news">Новости</label>
-          <input type="checkbox" name="gallery" id="gallery">
-          <label for="gallery">Галерея</label>
-          <input type="checkbox" name="basket" id="basket">
-          <label for="basket">Корзина</label>
-        </fieldset>
+    <section class="sidebar">
+      <h2 class="visually-hidden">Готовые шаблоны для вашего сайта</h2>
+      <aside class="left-choice"> 
+        <form class="filter" method="get" action="#">
+          <fieldset class="price">
+            <legend>Стоимость</legend>
+            <input type="range" min="0" max="15000"> 
+            <!--поля для ввода диапазона цены -->
+            <span class="range-text">От</span>
+            <input class="range-value" value="0"> 
+            <span class="range-label">руб.</span>
+            <span class="range-text">До</span>
+            <input class="text-value" value="15000">
+            <span class="range-label">руб.</span>          
+          </fieldset>
+          <fieldset class="layout">
+            <legend>Сетка</legend>
+            <!-- радиокнопки -->
+            <input type="radio" name="grid" value="adaptive" id="adaptive">
+            <label for="adaptive">Адаптивный</label> 
+            <input type="radio" name="grid" value="rubber" id="rubber">  
+            <label for="rubber">Резиновый</label> 
+            <input type="radio" name="grid" value="fixed" id="fixed"> 
+            <label for="fixed">Фиксированный</label> 
+          </fieldset>
+          <fieldset class="feature">
+            <legend>Особенности</legend>
+            <!--чек боксы -->
+            <input type="checkbox" name="specific" id="slider" checked>
+            <label for="slider">Слайдер</label>
+            <input type="checkbox" name="advantage" id="advantage">
+            <label for="advantage">Блок преимуществ</label>
+            <input type="checkbox" name="news" id="news" checked>
+            <label for="news">Новости</label>
+            <input type="checkbox" name="gallery" id="gallery">
+            <label for="gallery">Галерея</label>
+            <input type="checkbox" name="basket" id="basket">
+            <label for="basket">Корзина</label>
+          </fieldset>
           <button type="submit" class="filter-button">Показать</button>
+        </form>
+      </aside>
+    </section>
+  <!--Карточки товара (шаблонов) -->
+  <section class="catalogue">
+    <h2 class="visually-hidden">Каталог шаблонов для сайта</h2>
+    <ul class="catalogue-list">
+      <li class="catalogue-item">
+        <a href="#">
+          <h3 class="catalogue-header">Sedona</h3>
+          <p>
+            <img src="img/shop/sedona.jpg" width="364" alt="Шаблон Sedona">
+          </p>
+        </a> 
+        <p class="price">
+          <a class="button" href="#">9 900 Р</a>
+        </p>
+      </li>
+      <li class="catalogue-item">
+        <a href="#">
+          <h3 class="catalogue-header">Pink</h3>
+          <p>
+            <img src="img/shop/pink.jpg" width="364" alt="Шаблон Pink">
+          </p>
+        </a> 
 
-      </form>
-    </aside>
+        <p class="price">
+          <a class="button" href="#">9 900 Р</a>
+        </p>
+      </li>
+      <li class="catalogue-item">
+        <a href="#">
+          <h3 class="catalogue-header">Barbeshop</h3>
+          <p>
+            <img src="img/shop/barbershop.jpg" width="364" alt="Шаблон Barbeshop">
+          </p>
+        </a>   
+        <p class="price">
+          <a class="button" href="#">9 900 Р</a>
+        </p>
+      </li>
+      <li class="catalogue-item">
+        <a href="#">
+          <h3 class="catalogue-header">Mishki</h3>
+          <p>
+            <img src="img/shop/mishka.jpg" alt="Шаблон Mishki">
+          </p>
+        </a>               
+        <p class="price">
+          <a class="button" href="#">9 900 Р</a>
+        </p>
+      </li>
+      <li class="catalogue-item">
+        <a href="#">
+          <h3 class="catalogue-header">Aplus</h3>
+          <p>
+            <img src="img/shop/aplus.jpg" width="364" alt="Шаблон Aplus">
+          </p>
+        </a>  
+        <p class="price">
+          <a class="button" href="#">9 900 Р</a>
+        </p>
+      </li>
+      <li class="catalogue-item">
+        <a href="#">
+          <h3 class="catalogue-header">Kvast</h3>
+          <p>
+            <img src="img/shop/kvast.jpg" width="364" alt="Шаблон Kvast">
+          </p>
+        </a>  
+        <p class="price">
+          <a class="button" href="#">9 900 Р</a>
+        </p>
+        </li>
+    </ul>
   </section>
-
-    <main class="page-shop">
-    <!--Карточки товара (шаблонов) -->
-
-    <section class="catalog">
-      <h2 class="visually-hidden">Каталог шаблонов для сайта</h2>
-      <ul class="catalog-list">
-
-        <li class="catalog-item">
-          <a href="#">
-            <h3 class="category-header">Sedona</h3>
-              <p>
-                <img src="img/shop/sedona.jpg" alt="Шаблон Sedona">
-              </p>
-          </a> 
-            <p class="price">
-             <a class="button" href="#">9 900 Р</a>
-            </p>
-         </li>
-
-        <li class="catalog-item">
-         <a href="#">
-            <h3 class="category-header">Pink</h3>
-            <p>
-              <img src="img/shop/pink.jpg" alt="Шаблон Pink">
-            </p>
-         </a>                 
-            <p class="price">
-              <a class="button" href="#">9 900 Р</a>
-            </p>
-         </li>
-
-        <li class="catalog-item">
-          <a href="#">
-            <h3 class="category-header">Barbeshop</h3>
-            <p>
-              <img src="img/shop/barbershop.jpg" alt="Шаблон Barbeshop">
-            </p>
-          </a>   
-            <p class="price">
-              <a class="button" href="#">9 900 Р</a>
-            </p>
-        </li>
-        
-        <li class="catalog-item">
-          <a href="#">
-            <h3 class="category-header">Mishki</h3>
-            <p>
-              <img src="img/shop/mishka.jpg" alt="Шаблон Mishki">
-            </p>
-          </a>               
-            <p class="price">
-              <a class="button" href="#">9 900 Р</a>
-            </p>
-        </li>
-
-        <li class="catalog-item">
-          <a href="#">
-            <h3 class="category-header">Aplus</h3>
-            <p>
-              <img src="img/shop/aplus.jpg" alt="Шаблон Aplus">
-            </p>
-          </a>  
-            <p class="price">
-              <a class="button" href="#">9 900 Р</a>
-            </p>
-        </li>
-
-        <li class="catalog-item">
-          <a href="#">
-            <h3 class="category-header">Kvast</h3>
-            <p>
-              <img src="img/shop/kvast.jpg" alt="Шаблон Kvast">
-            </p>
-          </a>  
-            <p class="price">
-              <a class="button" href="#">9 900 Р</a>
-            </p>
-         </li>
-      </ul>
-    </section>
-
-    <section class="pagination-page">
-      <h3 class="visually-hidden">Навигация по каталогу сайта</h3>
-      <!--пагинация -->
-      <ul class="pagination">
-        <li class="pagination-item"><a class="pagination-link" href="#">Предыдущая</a></li> 
-        <li class="pagination-item"><a class="pagination-link" href="#">1</a></li>   
-        <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>  
-        <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>  
-        <li class="pagination-item"><a class="pagination-link" href="#">Следующая</a></li>  
-      </ul>
-    </section>
-
+  <section class="pagination">
+    <h3 class="visually-hidden">Навигация по каталогу сайта</h3>
+    <!--пагинация -->
+    <ul class="pagination-list">
+      <li class="pagination-item"><a class="pagination-link" href="#">Предыдущая</a></li> 
+      <li class="pagination-item"><a class="pagination-link" href="#">1</a></li>   
+      <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>  
+      <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>  
+      <li class="pagination-item"><a class="pagination-link" href="#">Следующая</a></li>  
+    </ul>
+  </section>
   </main>
-
  <footer class="page-footer">
-    <section class="webmap">
-        <h3 class="visually-hidden">Адрес на карте</h3>
-        <img src="img/map/map.jpg" alt="Карта проезда к офису веб-студии Нёрдс">        
-      <!-- Карта -->
-    </section> 
+  <h2 class="visually-hidden">Как нас найти в реале и виртуале</h2>
+  <section class="map">
+    <h3 class="visually-hidden">Карта проезда к офису веб-студии</h3>
+    <img src="img/map/map.jpg" width="1140" alt="Карта проезда к офису веб-студии Нёрдс">
+  </section> 
+  <div class="socials">
+    <!-- Иконки соцсетей-->
+    <ul class="socials-list">
+      <li class="socials-item"><a class="socials-link" href="#"><img src="img/social/vk-icon.png"  width="80" alt="ВК"></a></li>
+      <li class="socials-item"><a class="socials-link" href="#"><img src="img/social/fb-icon.png" width="80" alt="ФБ"></a></li>
+      <li class="socials-item"><a class="socials-link" href="#"><img src="img/social/insta-icon.png" width="80" alt="Инстаграмм"></a></li>
+    </ul>
+  </div>  
 
-    <div class="socials">
-      <!-- Иконки соцсетей-->
-
-      <ul class="social-icons">
-        <li class="social-item"><a class="social-link" href="#"><img src="img/social/vk-icon.png" alt="ВК"></a></li>
-        <li class="social-item"><a class="social-link" href="#"><img src="img/social/fb-icon.png" alt="ФБ"></a></li>
-        <li class="social-item"><a class="social-link" href="#"><img src="img/social/insta-icon.png" alt="Инстаграмм"></a></li>
-      </ul>
-    </div>  
-
-    <div class="friends">
-      <p>Давайте дружить, это выгодно!</p>
-    </div>
-
-    <div class="discount"> 
-      <p>Скидка 10% для друзей из социальных сетей</p>
-    </div>
-  </footer>
+  <div class="friends">
+    <p>Давайте дружить, это выгодно!</p>
+    <p>Скидка 10% для друзей из социальных сетей</p>
+  </div>
+ </footer>
 </body>
 </html>
