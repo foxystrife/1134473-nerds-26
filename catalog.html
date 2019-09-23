@@ -26,7 +26,7 @@
     <section class="sidebar">
       <h2 class="visually-hidden">Готовые шаблоны для вашего сайта</h2>
       <aside class="left-choice"> 
-        <form class="filter" method="get" action="https://htmlacademy.ru/intensive/htmlcss">
+        <form class="filter" method="get" action="https://htmlacademy.ru">
           <fieldset class="price">
             <legend>Стоимость</legend>
             <input type="range" min="0" max="15000"> 
@@ -67,81 +67,77 @@
       </aside>
     </section>
     <!-- Строка сортировки товаров-->
-    <section class="row-sort">
+    <section class="sort-row">
       <h3 class="visually-hidden">Сортировка шаблонов по цене, по типу, по алфавиту</h3>
-      <fieldset class="sort-type">
-        <legend>Сортировать</legend>
-
-        <input type="radio" name="sort" value="price" id="price">
-        <label for="price">Цена</label> 
-
-
-        <input type="radio" name="sort" value="type" id="type">  
-        <label for="type">По типу</label> 
-
-        <input type="radio" name="sort" value="name" id="name"> 
-        <label for="name">По имени</label> 
-      </fieldset>
-      
+      <h3 class="sort-title">Сортировать</h3>
+      <a class="sort-link" href="#">По цене</a>
+      <a class="sort-link" href="#">По типу</a>
+      <a class="sort-link" href="#">По имени</a>
     </section>
-
 
 <!--Карточки товара (шаблонов) -->
  <section class="catalogue">
    <h2 class="visually-hidden">Каталог шаблонов для сайта</h2>
    <ul class="catalogue-list">
-     <li class="catalogue-item">
-       <a href="#">
-         <p>
-           <img src="img/shop/sedona.jpg" width="364" alt="Шаблон Sedona">
-         </p>
-         <h3 class="catalogue-header">Sedona</h3>
-       </a> 
-       <p class="catalogue-description">Информационный сайт для туристов</p>
-       <p class="price">
-         <a class="button" href="#">9 900 Р</a>
-       </p>
-     </li>
-     <li class="catalogue-item">
-       <a href="#">
-         <p>
-           <img src="img/shop/pink.jpg" width="364" alt="Шаблон Pink">
-         </p>
-         <h3 class="catalogue-header">Pink App</h3>
-       </a> 
-       <p class="catalogue-description">Продуктовый лендинг приложения для iOS и Android</p>
-       <p class="price">
-         <a class="button" href="#">9 900 Р</a>
-       </p>
-     </li>
+    <li class="catalogue-item">
+      <a href="#">
+        <p>
+          <img src="img/shop/sedona.jpg" width="364" alt="Шаблон Sedona">
+        </p>
+        <h3 class="catalogue-header">Sedona</h3>
+      </a>
+      <div> 
+        <p class="catalogue-description">Информационный сайт для туристов</p>
+        <p class="price">
+          <a class="button" href="#">9 900 Р</a>
+        </p>
+      </div>
+    </li>
 
-     <li class="catalogue-item">
+    <li class="catalogue-item">
+      <a href="#">
+        <p>
+          <img src="img/shop/pink.jpg" width="364" alt="Шаблон Pink">
+        </p>
+        <h3 class="catalogue-header">Pink App</h3>
+      </a> 
+      <div>
+        <p class="catalogue-description">Продуктовый лендинг приложения для iOS и Android</p>
+        <p class="price">
+          <a class="button" href="#">9 900 Р</a>
+        </p>
+       </div> 
+    </li>
+    <li class="catalogue-item">
        <a href="#">
          <p>
            <img src="img/shop/barbershop.jpg" width="364" alt="Шаблон Barbeshop">
          </p>
          <h3 class="catalogue-header">Barbeshop</h3>
-       </a>   
-       <p class="catalogue-description">Сайт салона красоты. Для мужчин, да.</p>
-
-       <p class="price">
-         <a class="button" href="#">9 900 Р</a>
-       </p>
+       </a> 
+       <div>
+        <p class="catalogue-description">Сайт салона красоты. Для мужчин, да.</p>
+        <p class="price">
+          <a class="button" href="#">9 900 Р</a>
+        </p>
+       </div>
      </li>
 
-     <li class="catalogue-item">
-       <a href="#">
-
-         <p>
-           <img src="img/shop/mishka.jpg" alt="Шаблон Mishki">
-         </p>
-         <h3 class="catalogue-header">Mishka</h3>
-       </a>               
-       <p class="catalogue-description">Интернет-магазин вязаных игрушек</p>
-       <p class="price">
-         <a class="button" href="#">9 900 Р</a>
-       </p>
+    <li class="catalogue-item">
+      <a href="#">
+        <p>
+          <img src="img/shop/mishka.jpg" alt="Шаблон Mishki">
+        </p>
+        <h3 class="catalogue-header">Mishka</h3>
+      </a>
+      <div>
+        <p class="catalogue-description">Интернет-магазин вязаных игрушек</p>
+        <p class="price">
+          <a class="button" href="#">9 900 Р</a>
+        </p>
+      </div>
      </li>
+
      <li class="catalogue-item">
        <a href="#">
          <p>
@@ -149,24 +145,29 @@
          </p>
          <h3 class="catalogue-header">A plus</h3>
        </a>  
-       <p class="catalogue-description">Лендинг курсов повышения квалификации</p>
-       <p class="price">
-         <a class="button" href="#">9 900 Р</a>
-       </p>
+       <div>
+        <p class="catalogue-description">Лендинг курсов повышения квалификации</p>
+        <p class="price">
+          <a class="button" href="#">9 900 Р</a>
+        </p>
+       </div>
      </li>
+
      <li class="catalogue-item">
        <a href="#">
-
-         <p>
-           <img src="img/shop/kvast.jpg" width="364" alt="Шаблон Kvast">
-         </p>
-         <h3 class="catalogue-header">Kvast</h3>
+        <p>
+          <img src="img/shop/kvast.jpg" width="364" alt="Шаблон Kvast">
+        </p>
+        <h3 class="catalogue-header">Kvast</h3>
        </a>  
-       <p class="catalogue-description">Промо-сайт производителя крафтового кваса</p>
-       <p class="price">
-         <a class="button" href="#">9 900 Р</a>
-       </p>
-       </li>
+       <div>
+        <p class="catalogue-description">Промо-сайт производителя крафтового кваса</p>
+        <p class="price">
+          <a class="button" href="#">9 900 Р</a>
+        </p>
+       </div>
+     </li>
+
    </ul>
    </section>
    <section class="pagination">
