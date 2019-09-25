@@ -1,0 +1,112 @@
+body {	
+	margin: 0;
+	padding: 0;
+	font-family:'Roboto','Arial', sans-serif;	
+    color: #000;
+    background-color: #fff;   
+}
+
+a {
+	text-decoration:none;
+}
+
+.page-header {
+	background-color: grey; 
+}
+
+/*Главное верхнее меню сайта*/
+.navigation {
+font-size: 16px;
+line-height:30px;	
+font-weight: medium;
+color: #000;
+text-transform: uppercase;
+}
+
+.main-navigation {
+list-style: none;
+}
+
+.main-navigation a {
+	color: #000;
+}
+
+.main-navigation a:hover {
+color: #fb565a;
+}
+
+
+.main-navigation a:hover {
+color: #fb565a;
+}
+
+/*.main-navigation a:visited {
+color: #fb565a;
+}*/
+
+/*Блок Услуги services*/
+h3,
+.main-navigation-item,
+.basket-button 
+ {
+font-size: 24px;
+line-height: 30px; 	
+text-transform: uppercase;	
+}
+
+/*Блок О НАС класс about*/
+
+p{
+text-align: left;
+font-size: 16px;
+line-height: 24px;
+font-weight: 400;		
+}
+
+p.about-us-title {
+text-align: left;
+font-size: 45px;
+line-height: 45px;
+font-weight: 500;	
+}
+
+p.we-do {
+text-transform: uppercase;
+font-weight: 700;
+}
+
+.about-us-list,
+.feature {
+list-style: none;
+}
+
+.about-us-item,
+.feature-item {
+text-align: left;
+font-size: 16px;
+line-height: 24px;
+font-weight: 400;
+}
+
+
+
+h3.services-header {
+font-size: 24px;
+line-height:30px;	
+font-weight: 700;
+color: #000;
+}
+
+
+
+.page-footer{
+	background-color: #fff;
+}
+
+.socials-item {
+	background-color: grey;	
+}
+
+.sort-title {
+	color:red;
+}
