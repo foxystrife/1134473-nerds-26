@@ -1,9 +1,9 @@
-body {	
+body {
 	margin: 0;
 	padding: 0;
 	font-family:'Roboto','Arial', sans-serif;	
     color: #000;
-    background-color: #fff;   
+	background-color: #fff; 
 }
 
 a {
@@ -11,11 +11,17 @@ a {
 }
 
 .page-header {
-	background-color: grey; 
+    background-image: url(../img/background/grey-back.png); 	
 }
 
 /*Главное верхнее меню сайта*/
 .navigation {
+
+}
+
+.main-navigation,
+.basket-button  {
+list-style: none;
 font-size: 16px;
 line-height:30px;	
 font-weight: medium;
@@ -23,35 +29,66 @@ color: #000;
 text-transform: uppercase;
 }
 
-.main-navigation {
-list-style: none;
-}
-
 .main-navigation a {
 	color: #000;
 }
 
 .main-navigation a:hover {
-color: #fb565a;
+ color: rgb(251, 86, 90);
 }
 
-
-.main-navigation a:hover {
-color: #fb565a;
+.main-navigation a:active {
+color: red;
+text-decoration: underline; 
 }
 
-/*.main-navigation a:visited {
-color: #fb565a;
-}*/
 
 /*Блок Услуги services*/
-h3,
-.main-navigation-item,
-.basket-button 
- {
+h3 {
 font-size: 24px;
 line-height: 30px; 	
 text-transform: uppercase;	
+}
+
+.button,
+.filter-button {
+font-family: inherit;
+text-transform: uppercase;
+font-size: 16px;
+line-height: 18px;
+color: #ffffff;
+}
+
+.website {
+background-image: url(../img/buttons/btn-red-neutral.png);
+}
+.website:hover {
+background-image: url(../img/buttons/btn-red-hover.png);	
+}
+
+.website:active {
+background-image: url(../img/buttons/btn-red-click.png);	
+}
+
+.application {
+background-color: green;	
+/*background-image: url(../img/buttons/btn-green-neutral.png);	*/
+}
+.application:hover {
+background-image: url(../img/buttons/btn-green-hover.png);	
+}
+.application:active {
+background-image: url(../img/buttons/btn-green-click.png);	
+}
+
+.presentation {
+background-image: url(../img/buttons/btn-yellow-neutral.png);	
+}
+.presentation:hover {
+background-image: url(../img/buttons/btn-yellow-hover.png);	
+}
+.presentation:active {
+background-image: url(../img/buttons/btn-yellow-click.png);	
 }
 
 /*Блок О НАС класс about*/
@@ -64,7 +101,6 @@ font-weight: 400;
 }
 
 p.about-us-title {
-text-align: left;
 font-size: 45px;
 line-height: 45px;
 font-weight: 500;	
@@ -76,27 +112,27 @@ font-weight: 700;
 }
 
 .about-us-list,
-.feature {
+.features, 
+.sort-list,
+.sort-arrow,
+.pagination-list{
 list-style: none;
 }
 
 .about-us-item,
-.feature-item {
+.features-item {
 text-align: left;
 font-size: 16px;
 line-height: 24px;
 font-weight: 400;
 }
 
-
-
-h3.services-header {
-font-size: 24px;
+.header {
+font-size:24px;
 line-height:30px;	
 font-weight: 700;
 color: #000;
 }
-
 
 
 .page-footer{
@@ -110,3 +146,5 @@ color: #000;
 .sort-title {
 	color:red;
 }
+
+
