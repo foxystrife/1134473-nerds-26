@@ -28,40 +28,40 @@
       <aside class="left-choice"> 
         <form class="filter" method="get" action="https://htmlacademy.ru">
           <fieldset class="price">
-            <legend>Стоимость</legend>
+            <legend class="title">Стоимость</legend>
             <input type="range" min="0" max="15000"> 
             <!--поля для ввода диапазона цены -->
             <span class="range-text">От</span>
-            <input class="range-value" value="0"> 
+            <input class="text-value" value="0"> 
             <span class="range-label">руб.</span>
             <span class="range-text">До</span>
             <input class="text-value" value="15000">
             <span class="range-label">руб.</span>          
           </fieldset>           
           <fieldset class="layout">
-            <legend>Сетка</legend>
+            <legend class="title">Сетка</legend>
             <!-- радиокнопки -->
             <input type="radio" name="grid" value="adaptive" id="adaptive">
-            <label for="adaptive">Адаптивный</label> 
+            <label for="adaptive" class="field-filter">Адаптивный</label> 
             <input type="radio" name="grid" value="rubber" id="rubber">  
-            <label for="rubber">Резиновый</label> 
+            <label for="rubber" class="field-filter">Резиновый</label> 
             <input type="radio" name="grid" value="fixed" id="fixed"> 
-            <label for="fixed">Фиксированный</label> 
+            <label for="fixed" class="field-filter">Фиксированный</label> 
           </fieldset>
 
           <fieldset class="feature">
-            <legend>Особенности</legend>
+            <legend class="title">Особенности</legend>
             <!--чек боксы -->
             <input type="checkbox" name="specific" id="slider" checked>
-            <label for="slider">Слайдер</label>
+            <label for="slider" class="field-filter">Слайдер</label>
             <input type="checkbox" name="advantage" id="advantage">
-            <label for="advantage">Блок преимуществ</label>
+            <label for="advantage" class="field-filter">Блок преимуществ</label>
             <input type="checkbox" name="news" id="news" checked>
-            <label for="news">Новости</label>
+            <label for="news" class="field-filter">Новости</label>
             <input type="checkbox" name="gallery" id="gallery">
-            <label for="gallery">Галерея</label>
+            <label for="gallery" class="field-filter">Галерея</label>
             <input type="checkbox" name="basket" id="basket">
-            <label for="basket">Корзина</label>
+            <label for="basket" class="field-filter">Корзина</label>
           </fieldset>
           <button type="submit" class="filter-button">Показать</button>
         </form>
@@ -169,6 +169,9 @@
   <!-- Адрес и вызов формы Напишите нам-->
   <section class="write-us">
     <h3 class="write-us-header">Напишите нам</h3>
+    <p class="address-name">NЁrds design studio</p>
+    <p class="address">191186 Санкт-Петербург ул. Б. Конюшенная, д. 19/8</p> 
+    <p>тел. +7 (812) 275-75-75</p>
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
       <label for="write-us-name">Ваше имя</label>
       <input type="text" name="write-us-name" value="" placeholder="Имя Фамилия" id="write-us-name">
@@ -188,8 +191,8 @@
     </ul>
   </div>
   <div class="friends">
-    <p>Давайте дружить, это выгодно!</p>
-    <p>Скидка 10% для друзей из социальных сетей</p>
+    <p class="friends-title">Давайте дружить, это выгодно!</p>
+    <p class="discount">Скидка 10% для друзей из социальных сетей</p>
   </div>
 </footer>
 </body>

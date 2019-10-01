@@ -2,16 +2,35 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family:'Roboto','Arial', sans-serif;	
-    color: #000;
-	background-color: #fff; 
+	background-color: #fff; 	
+	color: #000;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	text-align: left;
+
+
+}
+
+.visually-hidden {
+	display: none;
+}
+
+h1 {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
 }
 
 a {
 	text-decoration:none;
+	color: #000000;
 }
 
 .page-header {
+
     background-image: url(../img/background/grey-back.png); 	
+
 }
 
 /*Главное верхнее меню сайта*/
@@ -19,14 +38,28 @@ a {
 
 }
 
+
+.catalogue-list,
+.socials-list,
 .main-navigation,
 .basket-button  {
-list-style: none;
-font-size: 16px;
-line-height:30px;	
-font-weight: medium;
-color: #000;
-text-transform: uppercase;
+	list-style: none;
+	line-height:30px;	
+	font-weight: 500;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.main-navigation {
+	padding-bottom: 10px;
+}
+
+.main-navigation {
+	width: 440px;
+}
+
+.basket-button {
+	width: 80px;
 }
 
 .main-navigation a {
@@ -37,68 +70,96 @@ text-transform: uppercase;
  color: rgb(251, 86, 90);
 }
 
-.main-navigation a:active {
-color: red;
-text-decoration: underline; 
+
+.main-navigation-item.active {
+    border-bottom: 2px solid;
+	border-image: url(../img/background/underline.png) 0 0 1 0;
+
+
 }
+
+/*Слайдер, Сервис — стиль по умолчанию*/
+
 
 
 /*Блок Услуги services*/
 h3 {
-font-size: 24px;
-line-height: 30px; 	
-text-transform: uppercase;	
+	font-size: 24px;
+	line-height: 30px; 	
+	text-transform: uppercase;	
+}
+
+.button {
+	border: none;
 }
 
 .button,
 .filter-button {
-font-family: inherit;
-text-transform: uppercase;
-font-size: 16px;
-line-height: 18px;
-color: #ffffff;
+	font-family: inherit;
+	text-transform: uppercase;
+	line-height: 18px;
 }
 
-.website {
+.button {	
+	color: #ffffff;
+}
+
+.filter-button {
+	color:#000000;
+}
+.slide-red {
+	background-image: url(../img/buttons/btn-slide-neitral.png);	
+	background-size: 240px 50px;
+}
+
+.slide-red:hover {
+    background-image: url(../img/buttons/btn-slide-hover.png);	
+}
+
+.slide-red:active {
+	background-image: url(../img/buttons/btn-slide-click.png);	
+}
+
+.red {
 background-image: url(../img/buttons/btn-red-neutral.png);
 }
-.website:hover {
+.red:hover {
 background-image: url(../img/buttons/btn-red-hover.png);	
 }
 
-.website:active {
+.red:active {
 background-image: url(../img/buttons/btn-red-click.png);	
 }
 
-.application {
-background-color: green;	
-/*background-image: url(../img/buttons/btn-green-neutral.png);	*/
+.green {
+background-image: url(../img/buttons/btn-green-neutral.png);
 }
-.application:hover {
+.green:hover {
 background-image: url(../img/buttons/btn-green-hover.png);	
 }
-.application:active {
+.green:active {
 background-image: url(../img/buttons/btn-green-click.png);	
 }
 
-.presentation {
+.yellow {
 background-image: url(../img/buttons/btn-yellow-neutral.png);	
 }
-.presentation:hover {
+.yellow:hover {
 background-image: url(../img/buttons/btn-yellow-hover.png);	
 }
-.presentation:active {
+.yellow:active {
 background-image: url(../img/buttons/btn-yellow-click.png);	
 }
 
+.slide-slogan {
+font-size: 55px;
+line-height: 55px;
+font-weight: 500;
+}
+
+
 /*Блок О НАС класс about*/
 
-p{
-text-align: left;
-font-size: 16px;
-line-height: 24px;
-font-weight: 400;		
-}
 
 p.about-us-title {
 font-size: 45px;
@@ -119,32 +180,89 @@ font-weight: 700;
 list-style: none;
 }
 
-.about-us-item,
+.address,
 .features-item {
-text-align: left;
-font-size: 16px;
-line-height: 24px;
-font-weight: 400;
+	font-size:16px;
+	line-height:18px;		
 }
+
+.friends-title {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+}
+
+.discount {
+	line-height: 22px;
+}
+
+.numbers {
+	font-size: 45px;
+	font-weight: 700;
+	/*line-height:  ???  */
+}
+.catalogue-description {
+	line-height: 18px;
+	text-align: center;	
+}
+
 
 .header {
-font-size:24px;
-line-height:30px;	
-font-weight: 700;
-color: #000;
+	font-size:24px;
+	line-height:30px;	
+	font-weight: 700;
+	color: #000;
 }
+ .address-name {
+ 	font-size:18px;
+	line-height:30px;	
+	font-weight: 700;
+	text-transform: uppercase;
+ }
 
-
+/*ДОДЕЛАТЬ*/
 .page-footer{
 	background-color: #fff;
 }
 
 .socials-item {
-	background-color: grey;	
+	background: url(../img/background/Shape-social.png) no-repeat;
+    background-size: auto auto;
+}
+
+/*Блок сортировки*/
+legend.title {
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+
+}
+
+.text-value,
+.range-text {
+	font-size: 16px;
+	line-height: 22px;
+	text-transform: uppercase;
+
+}
+
+.field-filter {
+	font-size: 16px;
+	line-height: 20px;
 }
 
 .sort-title {
-	color:red;
+	font-size: 18px;
+	line-height: 18px;
+	text-transform: uppercase;	
+}
+
+.sort-item {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;		
+
 }
 
 
+.filter-button{}
