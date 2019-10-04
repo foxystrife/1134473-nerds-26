@@ -220,6 +220,55 @@ list-style: none;
 	text-transform: uppercase;
  }
 
+/*КЛИЕНТЫ*/
+a.academy {
+	background-image: url(../img/clients/htmlacademy.png);
+	display: block;
+	width:199px;
+	height:69px;
+} 
+a.academy:hover {
+	background-image: url(../img/clients/htmlacademy-hover.png);
+
+} 
+
+a.borodinski {
+	background-image: url(../img/clients/borodinski.png);
+	display: block;
+	width:209px;
+	height:90px;
+}
+
+a.borodinski:hover {
+	background-image: url(../img/clients/borodinski-hover.png);
+
+}
+
+a.pink{
+	background-image: url(../img/clients/pink.png);
+	display: block;
+	width:185px;
+	height:52px;
+}
+
+a.pink:hover{
+	background-image: url(../img/clients/pink-hover.png);
+}
+
+
+a.mishka {
+	background-image: url(../img/clients/mishka.png);
+	display: block;
+	width:173px;
+	height:84px;
+}
+
+a.mishka:hover {
+	background-image: url(../img/clients/mishka-hover.png);
+}
+
+
+
 /*ДОДЕЛАТЬ*/
 .page-footer{
 	background-color: #fff;
@@ -227,7 +276,12 @@ list-style: none;
 
 .socials-item {
 	background: url(../img/background/Shape-social.png) no-repeat;
-    background-size: auto auto;
+    width: 79px;
+    height: 79px;
+}
+
+img.social-icon {
+	vertical-align: middle;
 }
 
 /*Блок сортировки*/
@@ -263,6 +317,5 @@ legend.title {
 	text-transform: uppercase;		
 
 }
-
 
 .filter-button{}
