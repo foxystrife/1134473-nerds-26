@@ -12,6 +12,15 @@ body {
 
 }
 
+.logo:hover {
+    background-image: url(../img/logo/nerds-logo-hover.svg);  
+}
+
+.logo:active {
+   background-image: url(../img/logo/nerds-logo-click.svg);  
+}
+
+
 .visually-hidden {
 	display: none;
 }
@@ -38,7 +47,7 @@ a {
 
 }
 
-
+.filter-option,
 .catalogue-list,
 .socials-list,
 .main-navigation,
@@ -49,6 +58,11 @@ a {
 	color: #000;
 	text-transform: uppercase;
 }
+
+.filter-option {
+		line-height:41px;	
+}
+
 
 .main-navigation {
 	padding-bottom: 10px;
@@ -66,8 +80,14 @@ a {
 	color: #000;
 }
 
+
 .main-navigation a:hover {
- color: rgb(251, 86, 90);
+	color: rgb(251, 86, 90);
+}
+
+.main-navigation a:active {
+	color: #000;
+	opacity: 0.3;
 }
 
 
@@ -78,8 +98,34 @@ a {
 
 }
 
+.basket-button {
+	color: #000;
+}
+
+.basket-button:hover {
+	color: rgb(251, 86, 90);
+}
+
+.basket-button:active {
+	color: #000;
+	opacity: 0.3;
+}
+
+
 /*Слайдер, Сервис — стиль по умолчанию*/
 
+.logo:hover {
+	opacity: 0.8;
+}
+
+.logo:active {
+	opacity: 0.3;
+}
+
+/*Фильтры*/
+.filter-option {
+
+}
 
 
 /*Блок Услуги services*/
@@ -89,8 +135,12 @@ h3 {
 	text-transform: uppercase;	
 }
 
+/*кнопки слайдера, ЗАКАЗАТЬ, каталога*/
 .button {
 	border: none;
+	color: #ffffff;	
+	height: 50px;
+
 }
 
 .button,
@@ -100,56 +150,72 @@ h3 {
 	line-height: 18px;
 }
 
-.button {	
-	color: #ffffff;
-}
 
 .filter-button {
 	color:#000000;
 }
-.slide-red {
-	background-image: url(../img/buttons/btn-slide-neitral.png);	
-	background-size: 240px 50px;
+
+.slide {
+	width: 240px;
 }
 
-.slide-red:hover {
-    background-image: url(../img/buttons/btn-slide-hover.png);	
+.buy {
+	width: 200px;
 }
 
-.slide-red:active {
-	background-image: url(../img/buttons/btn-slide-click.png);	
+.slide:active {
+	color: rgba(255, 255, 255, 0.302);
+}
+
+.order {
+	width: 160px;
+}
+
+.order:active{
+	color: rgba(255, 255, 255, 0.302);	
+}
+
+.letter {
+    width: 260px;	
+}
+
+.letter:active{
+	color: rgba(255, 255, 255, 0.302);	
 }
 
 .red {
-background-image: url(../img/buttons/btn-red-neutral.png);
+	background-color:rgb(255,85,90); 	
 }
 .red:hover {
-background-image: url(../img/buttons/btn-red-hover.png);	
+	background-color:rgb(255,64,68); 		
+}
+.red:active {
+	background-color:rgb(249,52,56);
 }
 
-.red:active {
-background-image: url(../img/buttons/btn-red-click.png);	
+
+.yellow {
+	background-color:rgb(253,201,59); 	
+}
+.yellow:hover {
+	background-color:rgb(252,182,28); 		
+}
+.yellow:active {
+	background-color:rgb(249,168,0); 		
 }
 
 .green {
-background-image: url(../img/buttons/btn-green-neutral.png);
+	background-color:rgb(0,203,111); 	
 }
 .green:hover {
-background-image: url(../img/buttons/btn-green-hover.png);	
+	background-color:rgb(0,189,103); 		
 }
 .green:active {
-background-image: url(../img/buttons/btn-green-click.png);	
+	background-color:rgb(0,171,93); 		
 }
 
-.yellow {
-background-image: url(../img/buttons/btn-yellow-neutral.png);	
-}
-.yellow:hover {
-background-image: url(../img/buttons/btn-yellow-hover.png);	
-}
-.yellow:active {
-background-image: url(../img/buttons/btn-yellow-click.png);	
-}
+
+
 
 .slide-slogan {
 font-size: 55px;
@@ -181,6 +247,7 @@ list-style: none;
 }
 
 .address,
+.write-us-form,
 .features-item {
 	font-size:16px;
 	line-height:18px;		
@@ -220,6 +287,8 @@ list-style: none;
 	text-transform: uppercase;
  }
 
+
+
 /*КЛИЕНТЫ*/
 a.academy {
 	background-image: url(../img/clients/htmlacademy.png);
@@ -232,6 +301,11 @@ a.academy:hover {
 
 } 
 
+a.academy:hover {
+	background-image: url(../img/clients/htmlacademy-click.png);
+
+}
+
 a.borodinski {
 	background-image: url(../img/clients/borodinski.png);
 	display: block;
@@ -241,6 +315,11 @@ a.borodinski {
 
 a.borodinski:hover {
 	background-image: url(../img/clients/borodinski-hover.png);
+
+}
+
+a.borodinski:active {
+	background-image: url(../img/clients/borodinski-click.png);
 
 }
 
@@ -255,6 +334,10 @@ a.pink:hover{
 	background-image: url(../img/clients/pink-hover.png);
 }
 
+a.pink:active {
+	background-image: url(../img/clients/pink-click.png);
+}
+
 
 a.mishka {
 	background-image: url(../img/clients/mishka.png);
@@ -267,24 +350,105 @@ a.mishka:hover {
 	background-image: url(../img/clients/mishka-hover.png);
 }
 
+a.mishka:active {
+	background-image: url(../img/clients/mishka-click.png);
+}
 
-
-/*ДОДЕЛАТЬ*/
+/*Соц кнопки и проч в футере*/
 .page-footer{
 	background-color: #fff;
 }
 
 .socials-item {
-	background: url(../img/background/Shape-social.png) no-repeat;
+	background-color: #e2e2e2;
     width: 79px;
     height: 79px;
+    border-radius: 50%;
 }
 
-img.social-icon {
-	vertical-align: middle;
+.socials-item:hover {
+	background-color: rgb(255,64,68);
 }
+
+.socials-item:active {
+	background-color: rgb(249,52,56);
+}
+
+.vk {
+	display: block;	
+	background-image: url(../img/social/vk-icon.png);	
+    width:100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.vk:hover {
+	background-image: url(../img/social/vk-icon-hover.png);	
+}
+.vk:active {
+	background-image: url(../img/social/vk-icon-click.png);	
+}
+
+.fb {
+	display: block;	
+	background-image: url(../img/social/fb-icon.png);	
+    width:100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.fb:hover {
+	background-image: url(../img/social/fb-icon-hover.png);	
+}
+.fb:active {
+	background-image: url(../img/social/fb-icon-click.png);	
+}
+
+
+.insta {
+	display: block;	
+	background-image: url(../img/social/insta-icon.png);	
+    width:100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.insta:hover {
+	background-image: url(../img/social/insta-icon-hover.png);	
+}
+.insta:active {
+	background-image: url(../img/social/insta-icon-click.png);	
+}
+
+
 
 /*Блок сортировки*/
+
+.filter fieldset {
+	border: none;
+}
+
+.filter-input {
+	display: none;
+}
+
+
+
+.filter-input:disabled+label
+ {
+	color: #eeeeee; 
+}
+
+
+.filter-input:hover+label,
+.filter-input:focus+label {
+	color: #505050; 
+}
+
+
 legend.title {
 	font-size: 18px;
 	line-height: 30px;
@@ -303,6 +467,7 @@ legend.title {
 .field-filter {
 	font-size: 16px;
 	line-height: 20px;
+	color: #bababa;
 }
 
 .sort-title {
