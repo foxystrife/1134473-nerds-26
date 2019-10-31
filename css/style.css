@@ -12,11 +12,17 @@ body {
 
 }
 
+p,
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
 .logo:hover {
     background-image: url(../img/logo/nerds-logo-hover.svg);  
 }
 
-.logo:active {
+.logo:not(.index):active {
    background-image: url(../img/logo/nerds-logo-click.svg);  
 }
 
@@ -114,11 +120,11 @@ a {
 
 /*Слайдер, Сервис — стиль по умолчанию*/
 
-.logo:hover {
+.logo:not(.index):hover {
 	opacity: 0.8;
 }
 
-.logo:active {
+.logo:not(.index):active {
 	opacity: 0.3;
 }
 
@@ -267,10 +273,6 @@ list-style: none;
 	font-size: 45px;
 	font-weight: 700;
 	/*line-height:  ???  */
-}
-.catalogue-description {
-	line-height: 18px;
-	text-align: center;	
 }
 
 
@@ -432,7 +434,7 @@ a.mishka:active {
 }
 
 .filter-input {
-	display: none;
+
 }
 
 
@@ -484,3 +486,66 @@ legend.title {
 }
 
 .filter-button{}
+
+/*Карточка товара*/
+
+.catalogue-item {
+	margin: 30px;
+	position: relative;
+	width: 360px;
+	height: 576px;
+	position: relative;
+}
+
+.catalogue-item:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 40px;
+    background-image: url(../img/shop/browser-repose.jpg);
+}
+
+.catalogue-item:hover {
+	background-image: url(../img/shop/browser.jpg);
+}
+
+.hidden-card { 
+	display: none;
+	background-color: green;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 231px;
+}
+.catalogue-item-image img {
+	display: block;
+}
+
+li.catalogue-item:hover > .hidden-card {
+	display: block !important;
+}
+.price,
+.catalogue-description {
+	line-height: 18px;
+	text-align: center;	
+}
+
+.catalogue-header {
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.a.button.red.buy {
+	margin-bottom: 42px;
+}    
+.buy {
+	width: 200px;
+	height: 50px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 16px;
+	padding-bottom: 16px; 
+}

@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <title>Веб-студия Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css"> 
-
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" href="css/style.css">
   </head>
-<body class="page">
+  <body class="page">
   <header class="page-header">
 
     <nav class="navigation" aria-label="Навигация по сайту Нёрдс">   <!--  top-menu -->
@@ -109,15 +109,15 @@
 
       <li class="catalogue-item">
         <a class="catalogue-item-image" href="#">
-          <p><img src="img/shop/browser-repose.jpg" width="360" height="40" alt="Шаблон Sedona"></p>
+        <!--<p><img src="img/shop/browser-repose.jpg" width="360" height="40" alt="Шаблон Sedona"></p>-->
           <p><img src="img/shop/sedona.jpg" width="360" height="576" alt="Шаблон Sedona"></p>
-          <div class="hidden-card"> 
-            <h3 class="catalogue-header">Sedona</h3>          
-            <p class="catalogue-description">Информационный сайт для туристов</p>
-            <p class="price"><a class="button red buy" href="#">9 900 Р</a></p>
-          </div>
         </a>
-        </li>
+        <div class="hidden-card"> 
+          <h3 class="catalogue-header">Sedona</h3>          
+          <p class="catalogue-description">Информационный сайт для туристов</p>
+          <p class="price"><a class="button red buy" href="#">9 900 Р</a></p>
+        </div>
+      </li>
 
       <li class="catalogue-item">
         <a href="#">
@@ -126,7 +126,7 @@
         <div class="hidden-card">
           <h3 class="catalogue-header">Pink App</h3>          
           <p class="catalogue-description">Продуктовый лендинг приложения для iOS и Android</p>
-          <p class="price"><a class="button" href="#">9 900 Р</a></p>
+          <p class="price"><a class="button red buy" href="#">9 900 Р</a></p>
         </div>
       </li>
       <li class="catalogue-item">
@@ -136,7 +136,7 @@
         <div class="hidden-card">
           <h3 class="catalogue-header">Barbeshop</h3>
           <p class="catalogue-description">Сайт салона красоты. Для мужчин, да.</p>
-          <p class="price"><a class="button" href="#">9 900 Р</a></p>
+          <p class="price"><a class="button red buy" href="#">9 900 Р</a></p>
         </div>
       </li>
       <li class="catalogue-item">
@@ -146,7 +146,7 @@
         <div class="hidden-card">
           <h3 class="catalogue-header">Mishka</h3>
           <p class="catalogue-description">Интернет-магазин вязаных игрушек</p>
-          <p class="price"><a class="button" href="#">9 900 Р</a></p>
+          <p class="price"><a class="button red buy" href="#">9 900 Р</a></p>
         </div>
       </li>
       <li class="catalogue-item">
@@ -156,7 +156,7 @@
         <div class="hidden-card">
           <h3 class="catalogue-header">A plus</h3>          
           <p class="catalogue-description">Лендинг курсов повышения квалификации</p>
-          <p class="price"><a class="button" href="#">9 900 Р</a></p>
+          <p class="price"><a class="button red buy" href="#">9 900 Р</a></p>
         </div>
       </li>
       <li class="catalogue-item">
@@ -166,7 +166,7 @@
         <div class="hidden-card">
           <h3 class="catalogue-header">Kvast</h3>          
           <p class="catalogue-description">Промо-сайт производителя крафтового кваса</p>
-          <p class="price"><a class="button" href="#">9 900 Р</a></p>
+          <p class="price"><a class="button red buy" href="#">9 900 Р</a></p>
         </div>
       </li>
     </ul>
