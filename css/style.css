@@ -12,12 +12,6 @@ body {
 
 }
 
-p,
-ul {
-	margin: 0px;
-	padding: 0px;
-}
-
 .logo:hover {
     background-image: url(../img/logo/nerds-logo-hover.svg);  
 }
@@ -53,8 +47,11 @@ a {
 
 }
 
+.catalogue-list {
+	list-style: none;	
+}
 .filter-option,
-.catalogue-list,
+.catalogue-header,
 .socials-list,
 .main-navigation,
 .basket-button  {
@@ -145,7 +142,7 @@ h3 {
 .button {
 	border: none;
 	color: #ffffff;	
-	height: 50px;
+	min-height: 50px;
 
 }
 
@@ -296,7 +293,7 @@ a.academy {
 	background-image: url(../img/clients/htmlacademy.png);
 	display: block;
 	width:199px;
-	height:69px;
+	min-height:69px;
 } 
 a.academy:hover {
 	background-image: url(../img/clients/htmlacademy-hover.png);
@@ -312,7 +309,7 @@ a.borodinski {
 	background-image: url(../img/clients/borodinski.png);
 	display: block;
 	width:209px;
-	height:90px;
+	min-height:90px;
 }
 
 a.borodinski:hover {
@@ -329,7 +326,7 @@ a.pink{
 	background-image: url(../img/clients/pink.png);
 	display: block;
 	width:185px;
-	height:52px;
+	min-height:52px;
 }
 
 a.pink:hover{
@@ -345,7 +342,7 @@ a.mishka {
 	background-image: url(../img/clients/mishka.png);
 	display: block;
 	width:173px;
-	height:84px;
+	min-height:84px;
 }
 
 a.mishka:hover {
@@ -488,64 +485,82 @@ legend.title {
 .filter-button{}
 
 /*Карточка товара*/
-
-.catalogue-item {
-	margin: 30px;
-	position: relative;
-	width: 360px;
-	height: 576px;
-	position: relative;
+.catalogue-header {
+	color: rgb(0,0,0);
+}
+.catalogue-header:hover {
+	color: rgb(251,86,90);
 }
 
-.catalogue-item:before {
+.catalogue-header:active {
+	color: rgb(0,0,0,0.3);
+}
+
+.catalogue-item {
+	position: relative;
+	width: 360px;
+	margin: 30px;
+	min-height: 576px;
+	padding-top: 23px;
+}
+
+.catalogue-item::before {
 	content: "";
 	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-	height: 40px;
+	min-height: 40px;
     background-image: url(../img/shop/browser-repose.jpg);
 }
 
-.catalogue-item:hover {
+.catalogue-item:hover::before {
 	background-image: url(../img/shop/browser.jpg);
 }
 
 .hidden-card { 
 	display: none;
-	background-color: green;
+	background-color: rgb(233,233,233);
 	position: absolute;
 	left: 0px;
 	bottom: 0px;
 	width: 100%;
-	height: 231px;
+	min-height: 231px;
 }
 .catalogue-item-image img {
 	display: block;
 }
 
 li.catalogue-item:hover > .hidden-card {
-	display: block !important;
+	display: block;
 }
-.price,
+
 .catalogue-description {
 	line-height: 18px;
 	text-align: center;	
+	margin: 0;	
+	margin-top: 18px;
+	margin-bottom: 27px;
 }
 
 .catalogue-header {
 	font-size: 18px;
-	line-height: 30px;
 	text-transform: uppercase;
 	text-align: center;
+	margin: 0;
+	margin-top: 26px;
 }
-
-.a.button.red.buy {
-	margin-bottom: 42px;
-}    
+ 
 .buy {
+	/*display: inline-block;*/
+	display: block;
 	width: 200px;
-	height: 50px;
-	padding-left: 60px;
-	padding-right: 60px;
-	padding-top: 16px;
-	padding-bottom: 16px; 
+	min-height: 50px;
+    line-height: 50px;
+	box-sizing: border-box;
+	margin: auto;
+	text-align: center;
+}
+.buy:active {
+	box-shadow: inset 0px 0px 5px green; 
 }
